@@ -9,6 +9,10 @@ module.exports = (err, req, res, next) => {
     status = 400;
   }
 
+  res.status(status);
+
+  console.log(err);
+
   res.send({
     status,
     message: err.message

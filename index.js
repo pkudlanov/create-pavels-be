@@ -36,6 +36,7 @@ node_modules
 function installDependencies(folder) {
   const devDependencies = [
     'eslint',
+    '@types/jest',
     'jest',
     'nodemon',
     'supertest'

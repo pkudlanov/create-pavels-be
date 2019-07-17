@@ -5,11 +5,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const args = process.argv;
-const folderName = args[args.length - 1];
-const folder = folderName;
-
-fs.mkdirSync(folder);
+const folder = './';
 
 setupFiles(folder);
 installDependencies(folder);
@@ -22,11 +18,6 @@ function setupFiles(folder) {
   const packageJSON = fs.readFileSync(path.join(folder, 'package.json'), { encoding: 'utf8' });
   const updatedPackageJSON = packageJSON.replace('FOLDER_NAME', folder);
   fs.writeFileSync(path.join(folder, 'package.json'), updatedPackageJSON);
-
-  fs.writeFileSync(path.join(folder, '.gitignore'), `
-node_modules
-.env
-  `.trim());
 
   fs.writeFileSync(path.join(folder, '.env'), `
   MONGODB_URI=mongodb://localhost:27017/${folder}

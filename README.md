@@ -4,7 +4,7 @@
 
 `npm init alchemy-be NAME_OF_PROJECT`
 
-1. npm init alchemy-be PROJECT_NAMEW
+1. npm init alchemy-be PROJECT_NAME
 
 1. cd into PROJECT_NAME
 

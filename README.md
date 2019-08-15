@@ -19,6 +19,6 @@
 4. Push all new changes to github
 5. Publish to npm
    1. cd to local npm module files directory
-   2. npm <update_type>
+   2. npm version <update_type>
       1. patch, minor, major
    3. npm publish

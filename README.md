@@ -2,7 +2,7 @@
 
 **Don't** install this package. Use `npm init` in parent directory.
 
-`npm init pavels-be NAME_OF_PROJECT`
+`npm init pavels-be`
 
 ## Initialization
 

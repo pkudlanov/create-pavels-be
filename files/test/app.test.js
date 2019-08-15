@@ -6,15 +6,15 @@ const connect = require('../lib/utils/connect');
 const mongoose = require('mongoose');
 
 describe('app routes', () => {
-    beforeAll(() => {
-        connect();
-    });
+  beforeAll(() => {
+    connect();
+  });
 
-    beforeEach(() => {
-        return mongoose.connection.dropDatabase();
-    });
+  beforeEach(() => {
+    return mongoose.connection.dropDatabase();
+  });
 
-    afterAll(() => {
-        return mongoose.connection.close();
-    });
+  afterAll(() => {
+    return mongoose.connection.close();
+  });
 });

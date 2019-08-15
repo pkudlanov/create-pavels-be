@@ -37,3 +37,10 @@ Lot's of little bugs and little things fixed.
 5. Updated README file with my own instructions now
 6. Added some comments in index.js for future diagnostics
 
+## Version 1.0.2
+
+Tabs updated.
+
+### Changes
+
+1. Changed tab size to two spaces
